@@ -1,0 +1,1 @@
+#include "tipoEcuacion.h"
