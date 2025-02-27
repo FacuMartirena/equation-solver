@@ -1,6 +1,6 @@
 #ifndef STRING_H_INCLUDED
 #define STRING_H_INCLUDED
-
+#include <stdio.h>
 #include "boolean.h"
 
 const int MAX = 80;
@@ -16,8 +16,10 @@ void strmay(string s);
 /* convierte el string a maysucula */
 boolean strmen (string s1, string s2);
 /* determina si s1 es alfabéticamente menor que s2 */
-boolean streq (string s1, string s2);
+boolean streq (const string s1,const string s2);
 /* determina si los strings s1 y s2 son iguales */
+void strcrear (string &s);
+/*crea una cadena dinámica vacía */
 void strcop (string &s1, string s2);
 /* copia el contenido del string s2 en s1 */
 void strcon (string &s1, string s2);

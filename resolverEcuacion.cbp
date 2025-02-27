@@ -33,40 +33,22 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="abb.cpp" />
-		<Unit filename="abb.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="abb.h" />
 		<Unit filename="boolean.cpp" />
-		<Unit filename="boolean.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="boolean.h" />
 		<Unit filename="ecuacion.cpp" />
-		<Unit filename="ecuacion.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="ecuacion.h" />
 		<Unit filename="lista.cpp" />
-		<Unit filename="lista.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="lista.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="primerGrado.cpp" />
-		<Unit filename="primerGrado.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="primerGrado.h" />
 		<Unit filename="segundoGrado.cpp" />
-		<Unit filename="segundoGrado.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="string.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="string.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="segundoGrado.h" />
+		<Unit filename="string.cpp" />
+		<Unit filename="string.h" />
 		<Unit filename="tipoEcuacion.cpp" />
-		<Unit filename="tipoEcuacion.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="tipoEcuacion.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

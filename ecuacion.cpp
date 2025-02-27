@@ -13,29 +13,30 @@ void mostrarEcuacion(Ecuacion ecuacion)
 
 }
 
-void suma(Ecuacion ecuacion1, Ecuacion ecuacion2, string identificador,Ecuacion &resultado)
+boolean suma(Ecuacion ecuacion1, Ecuacion ecuacion2, string identificador,Ecuacion &resultado)
 {
-    //strcrear(resultado.id);                                     <---------------------------------
-    strcop(resultado.id,identificador);        //pasar a dinamico <---------------------------------
+    boolean valido=TRUE;
+    strcrear(resultado.id);
+    strcop(resultado.id,identificador);
     if(ecuacion1.discriminante==ecuacion2.discriminante)
     {
         resultado.discriminante=ecuacion1.discriminante;
         if(resultado.discriminante==PRIMER_GRADO)
         {
-            sumaPrimera(ecuacion1.datos.dato1,ecuacion2.datos.dato1,resultado);
+            sumaPrimera(ecuacion1.datos.dato1,ecuacion2.datos.dato1,resultado.datos.dato1);
             if(resultado.datos.dato1.terminoLineal==0)
             {
 
-                //resultado.discriminante=?
+                valido=FALSE;
             }
 
         }
         else{
-            sumaSegunda(ecuacion1.datos.dato2,ecuacion2.datos.dato2,resultado.datos);
+            sumaSegunda(ecuacion1.datos.dato2,ecuacion2.datos.dato2,resultado.datos.dato2);
 
             if(resultado.datos.dato2.terminoLineal==0 && resultado.datos.dato2.terminoCuadratico==0)
             {
-                //resultado.discriminante=?
+                valido=FALSE;
 
             }
             else{
@@ -55,12 +56,13 @@ void suma(Ecuacion ecuacion1, Ecuacion ecuacion2, string identificador,Ecuacion 
         if(ecuacion1.discriminante==PRIMER_GRADO)
         {
 
-            sumaDiferenteGrado(ecuacion1.datos.dato1,ecuacion2.datos.dato2,resultado);
+           // sumaDiferenteGrado(ecuacion1.datos.dato1,ecuacion2.datos.dato2,resultado);
         }
-    else{
-        sumaDiferenteGrado(ecuacion1.datos.dato2,ecuacion2.datos.dato1,resultado);
-        }
+        else{
+           // sumaDiferenteGrado(ecuacion2.datos.dato1,ecuacion1.datos.dato2,resultado);
+            }
     }
+    return valido;
 }
 void sumaDiferenteGrado(PrimerGrado primer, SegundoGrado segundo,Ecuacion &nuevo)
 {

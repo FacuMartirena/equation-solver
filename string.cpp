@@ -16,7 +16,7 @@ void print (string s)
     int i=0;
     while(s[i]!='\0')
     {
-        print("%c",s[i]);
+        printf("%c",s[i]);
         i++;
     }
 }
@@ -50,41 +50,46 @@ boolean strmen(string s1, string s2)
     }
     if(aux1[i]=='\0' && aux2[i]=='\0')
     {
-        return false;
+        return FALSE;
     }
     else
     {
         if(aux2[i]=='\0')
         {
-            return true;
+            return TRUE;
         }
         else
         {
             if(aux2[i]=='\0')
             {
-                return false;
+                return FALSE;
             }
             else
             {
-                return aux1[i]<aux2[i];
+                if(aux1[i]<aux2[i])
+                    return TRUE;
+                else
+                    return FALSE;
             }
         }
     }
 }
 /*------------------------------------------*/
-boolean streq (string s1, string s2)
+boolean streq (const string s1,const string s2)
 {
+    string aux1;
+    string aux2;
     int i=0;
-    strcop(aux1, s1):
+    strcop(aux1, s1);
     strcop(aux2, s2);
 
     strmay(aux1);
     strmay(aux2);
-    while(s[i]!='\0' && aux2[i]!='\0' && s1[i]==s2[i])
+    while(aux1[i]!='\0' && aux2[i]!='\0' && aux1[i]==aux2[i])
     {
         i++;
     }
-    return (s1[i]=='\0' && s2[i]=='\0');
+    return (boolean)(aux1[i]=='\0' && aux2[i]=='\0');
 }
 /*------------------------------------------*/
 void strmay(string s)
@@ -97,6 +102,11 @@ void strmay(string s)
             s[i]=s[i]-32;
         }
     }
+}
+/*------------------------------------------*/
+void strcrear (string &s){
+    s = new char [1];
+    s[0]='\0';
 }
 /*------------------------------------------*/
 /*void strcop(string &s1, string s2)
@@ -116,7 +126,7 @@ void strcop(string &s1, const string s2) {
         delete[] s1;
     }
     // Asignar memoria dinámica para s1
-    s1 = new char[strlen(s2) + 1]; // +1 para el carácter nulo '\0'
+    s1 = new char[strlar(s2) + 1]; // +1 para el carácter nulo '\0'
     // Copiar el contenido de s2 a s1
     int i = 0;
     while (s2[i] != '\0') {
@@ -136,9 +146,9 @@ void strswp(string &s1, string &s2)
 /*------------------------------------------*/
 void strcon(string &s1, string s2)
 {
-    int i=strlen(s1);
+    int i=strlar(s1);
     int j=0;
-    while(i+j<MAX-1 && S2[j]!='\0')
+    while(i+j<MAX-1 && s2[j]!='\0')
     {
         s1[i]=s2[j];
         i++;
@@ -151,12 +161,12 @@ void strcon(string &s1, string s2)
 // Función para verificar si una cadena es alfabética
 boolean esAlfabetico(string s){
     int i=0;
-    boolean seguir=true;
+    boolean seguir=TRUE;
     while(s[i]!='\0' && seguir)
     {
-        if(!((s[i]>=97 && s[i]<=122)||(s[i]>=65 && s[i]<=90))
+        if(!((s[i]>=97 && s[i]<=122)||(s[i]>=65 && s[i]<=90)))
         {
-            seguir=false;
+            seguir=FALSE;
         }
         i++;
     }

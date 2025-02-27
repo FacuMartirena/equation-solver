@@ -26,7 +26,7 @@ void setEcuacionPrimera(Ecuacion &ecuacion, PrimerGrado primeraGrado);
 SegundoGrado getEcuacionSegunda(Ecuacion ecuacion);
 void setEcuacionSegunda(Ecuacion &ecuacion, SegundoGrado segundoGrado);
 //string getIdentificador(Ecuacion ecuacion); //no devolvemos strings como funcion void getIdentificador (Ecuacion ecuacion, string &s)
-Ecuacion suma(Ecuacion ecuacion1, Ecuacion ecuacion2, string identificador);
+boolean suma(Ecuacion ecuacion1, Ecuacion ecuacion2, string identificador,Ecuacion &resultado);
 void sumaDiferenteGrado(PrimerGrado primer, SegundoGrado segundo,SegundoGrado &ecuacion);
 void setIdentificador(Ecuacion &ecuacion, string id);
 void guardarEcuacion(Ecuacion ecuacion, FILE* archivo);

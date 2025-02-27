@@ -54,29 +54,30 @@
 1740186126 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\tipoecuacion.cpp
 	"tipoEcuacion.h"
 
-1740527754 source:c:\users\famartirena\downloads\resolverecuacion\abb.cpp
+1740693248 source:c:\users\famartirena\downloads\resolverecuacion\abb.cpp
 	"abb.h"
 
 1740527754 c:\users\famartirena\downloads\resolverecuacion\abb.h
 	"ecuacion.h"
 
-1740605010 c:\users\famartirena\downloads\resolverecuacion\ecuacion.h
+1740691275 c:\users\famartirena\downloads\resolverecuacion\ecuacion.h
 	"string.h"
 	"tipoEcuacion.h"
 	"primerGrado.h"
 	"segundoGrado.h"
 
-1740604460 c:\users\famartirena\downloads\resolverecuacion\string.h
+1740692161 c:\users\famartirena\downloads\resolverecuacion\string.h
+	<stdio.h>
 	"boolean.h"
 
 1740527754 c:\users\famartirena\downloads\resolverecuacion\boolean.h
 
 1740527755 c:\users\famartirena\downloads\resolverecuacion\tipoecuacion.h
 
-1740606817 c:\users\famartirena\downloads\resolverecuacion\primergrado.h
+1740692589 c:\users\famartirena\downloads\resolverecuacion\primergrado.h
 	<stdio.h>
 
-1740606817 c:\users\famartirena\downloads\resolverecuacion\segundogrado.h
+1740690999 c:\users\famartirena\downloads\resolverecuacion\segundogrado.h
 	<stdio.h>
 	"boolean.h"
 	<iostream>
@@ -85,7 +86,7 @@
 1740527754 source:c:\users\famartirena\downloads\resolverecuacion\boolean.cpp
 	"boolean.h"
 
-1740527754 source:c:\users\famartirena\downloads\resolverecuacion\ecuacion.cpp
+1740692441 source:c:\users\famartirena\downloads\resolverecuacion\ecuacion.cpp
 	"ecuacion.h"
 
 1740527754 source:c:\users\famartirena\downloads\resolverecuacion\lista.cpp
@@ -101,14 +102,17 @@
 	"lista.h"
 	<stdio.h>
 
-1740605294 source:c:\users\famartirena\downloads\resolverecuacion\primergrado.cpp
+1740606941 source:c:\users\famartirena\downloads\resolverecuacion\primergrado.cpp
 	"primerGrado.h"
 	<iostream>
 
-1740528903 source:c:\users\famartirena\downloads\resolverecuacion\segundogrado.cpp
+1740606936 source:c:\users\famartirena\downloads\resolverecuacion\segundogrado.cpp
 	"segundoGrado.h"
 	<stdio.h>
 
 1740527755 source:c:\users\famartirena\downloads\resolverecuacion\tipoecuacion.cpp
 	"tipoEcuacion.h"
+
+1740692343 source:c:\users\famartirena\downloads\resolverecuacion\string.cpp
+	"string.h"
 
