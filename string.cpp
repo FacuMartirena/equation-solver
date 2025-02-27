@@ -99,7 +99,7 @@ void strmay(string s)
     }
 }
 /*------------------------------------------*/
-void strcop(string &s1, string s2)
+/*void strcop(string &s1, string s2)
 {
     int i=0;
     while(s2[i]!='\0')
@@ -108,6 +108,22 @@ void strcop(string &s1, string s2)
         i++;
     }
     s1[i]='\0';
+} */
+
+void strcop(string &s1, const string s2) {
+    // Liberar la memoria previa de s1 si ya estaba asignada
+    if (s1 != NULL) {
+        delete[] s1;
+    }
+    // Asignar memoria dinámica para s1
+    s1 = new char[strlen(s2) + 1]; // +1 para el carácter nulo '\0'
+    // Copiar el contenido de s2 a s1
+    int i = 0;
+    while (s2[i] != '\0') {
+        s1[i] = s2[i];
+        i++;
+    }
+    s1[i] = '\0'; // Asegurarse de que s1 esté terminado con '\0'
 }
 /*------------------------------------------*/
 void strswp(string &s1, string &s2)

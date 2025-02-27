@@ -59,11 +59,12 @@ void cargarPrimerGrado(PrimerGrado &ecuacion, FILE* archivo)
     fread(&ecuacion,sizeof(PrimerGrado),1,archivo);
 
 }
-PrimerGrado sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2){
-    PrimerGrado nuevo;
+void sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2,PrimerGrado &nuevo){
+
     nuevo.terminoLineal=ecuacion1.terminoLineal+ecuacion2.terminoLineal;
     //setTerminoLineal(nuevo,getTerminoLineal(ecuacion1)+getTerminoLineal(ecuacion2));
     nuevo.terminoIndependiente=ecuacion1.terminoIndependiente+ecuacion2.terminoIndependiente;
+
 }
 
 

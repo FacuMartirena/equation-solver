@@ -60,23 +60,23 @@
 1740527754 c:\users\famartirena\downloads\resolverecuacion\abb.h
 	"ecuacion.h"
 
-1740527754 c:\users\famartirena\downloads\resolverecuacion\ecuacion.h
+1740605010 c:\users\famartirena\downloads\resolverecuacion\ecuacion.h
 	"string.h"
 	"tipoEcuacion.h"
 	"primerGrado.h"
 	"segundoGrado.h"
 
-1740527755 c:\users\famartirena\downloads\resolverecuacion\string.h
+1740604460 c:\users\famartirena\downloads\resolverecuacion\string.h
 	"boolean.h"
 
 1740527754 c:\users\famartirena\downloads\resolverecuacion\boolean.h
 
 1740527755 c:\users\famartirena\downloads\resolverecuacion\tipoecuacion.h
 
-1740527754 c:\users\famartirena\downloads\resolverecuacion\primergrado.h
+1740606817 c:\users\famartirena\downloads\resolverecuacion\primergrado.h
 	<stdio.h>
 
-1740527754 c:\users\famartirena\downloads\resolverecuacion\segundogrado.h
+1740606817 c:\users\famartirena\downloads\resolverecuacion\segundogrado.h
 	<stdio.h>
 	"boolean.h"
 	<iostream>
@@ -94,14 +94,14 @@
 1740527754 c:\users\famartirena\downloads\resolverecuacion\lista.h
 	"string.h"
 
-1740529065 source:c:\users\famartirena\downloads\resolverecuacion\main.cpp
+1740529128 source:c:\users\famartirena\downloads\resolverecuacion\main.cpp
 	<iostream>
 	"primerGrado.h"
 	"segundoGrado.h"
 	"lista.h"
 	<stdio.h>
 
-1740529086 source:c:\users\famartirena\downloads\resolverecuacion\primergrado.cpp
+1740605294 source:c:\users\famartirena\downloads\resolverecuacion\primergrado.cpp
 	"primerGrado.h"
 	<iostream>
 

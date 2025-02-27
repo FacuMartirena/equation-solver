@@ -18,6 +18,6 @@ int getIndependiente(PrimerGrado ecuacion);
 void resolverEcuacionPrimer(PrimerGrado ecuacion, float &raiz);
 void guardarPrimerGrado(PrimerGrado ecuacion, FILE* archivo);
 void cargarPrimerGrado(PrimerGrado &ecuacion, FILE* archivo);
-PrimerGrado sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2);
+void sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2,PrimerGrado PrimerGrado);
 
 #endif // PRIMERGRADO_H_INCLUDED

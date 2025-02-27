@@ -4,7 +4,7 @@
 #include "boolean.h"
 
 const int MAX = 80;
-typedef char string[MAX];
+typedef char* string;
 
 int strlar (string s);
 /* devuelve el largo del string s */
