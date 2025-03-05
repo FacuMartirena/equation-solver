@@ -26,6 +26,10 @@ void resolverEcuacionSegundo(SegundoGrado ecuacion, float &raiz1, float &raiz2);
 float discriminante(SegundoGrado ecuacion);
 void guardarSegundoGrado(SegundoGrado ecuacion, FILE* archivo);
 void cargarSegundoGrado(SegundoGrado &ecuacion, FILE* archivo);
+<<<<<<< HEAD
 void sumaSegunda(SegundoGrado ecuacion1, SegundoGrado ecuacion2,SegundoGrado &resultado);
+=======
+void sumaSegunda(SegundoGrado ecuacion1, SegundoGrado ecuacion2,SegundoGrado &total);
+>>>>>>> 14caf5c (commit)
 
 #endif // SEGUNDOGRADO_H_INCLUDED

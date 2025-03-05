@@ -1,5 +1,9 @@
 #include "segundoGrado.h"
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+
+>>>>>>> 14caf5c (commit)
 
 
 void crearSegundoGrado(int terminoCuadratico, int terminoLineal, int independiente,SegundoGrado &nuevo){
@@ -11,6 +15,7 @@ void crearSegundoGrado(int terminoCuadratico, int terminoLineal, int independien
 }
 
 void mostrarSegundoGrado(SegundoGrado ecuacion){
+<<<<<<< HEAD
     printf("%dx^2", ecuacion.terminoCuadratico);
     if(ecuacion.terminoLineal>0)
         printf("+%dx", ecuacion.terminoLineal);
@@ -26,6 +31,24 @@ void mostrarSegundoGrado(SegundoGrado ecuacion){
           /*  print("%dx =0",ecuacion.terminoLineal);*/
         else
             printf("%d =0", ecuacion.terminoIndependiente);
+=======
+    std::cout<< ecuacion.terminoCuadratico << "x^2 ";
+    if(ecuacion.terminoLineal>0)
+        std::cout<<"+ "+ ecuacion.terminoLineal << "x";
+    else
+        if(ecuacion.terminoLineal<0)
+            std::cout<< ecuacion.terminoLineal << "x";
+
+    if(ecuacion.terminoIndependiente>0)
+        std::cout<<  ecuacion.terminoIndependiente << " = 0" << std::endl;
+        /*print("%dx + %d=0",ecuacion.terminoLineal,ecuacion.terminoIndependiente);*/
+    else
+        if(ecuacion.terminoIndependiente==0)
+            std::cout <<  " = 0" << std::endl;
+          /*  print("%dx =0",ecuacion.terminoLineal);*/
+        else
+            std::cout << ecuacion.terminoIndependiente << " = 0" << std::endl;
+>>>>>>> 14caf5c (commit)
           /*  print("%dx %d=0",ecuacion.terminoLineal,ecuacion.terminoIndependiente)*/
 }
 //Precondicion: terminoCuadratico!=0
@@ -89,5 +112,9 @@ void cargarSegundoGrado(SegundoGrado &ecuacion, FILE* archivo);*/
 void sumaSegunda(SegundoGrado ecuacion1, SegundoGrado ecuacion2,SegundoGrado &resultado){
     resultado.terminoCuadratico=ecuacion1.terminoCuadratico+ecuacion2.terminoCuadratico;
     resultado.terminoLineal=ecuacion1.terminoCuadratico+ecuacion2.terminoLineal;
+<<<<<<< HEAD
     resultado.terminoIndependiente=ecuacion1.terminoIndependiente+ecuacion2.terminoIndependiente;
+=======
+    resultado.terminoIndependiente=ecuacion1.terminoIndependiente+ecuacion2.terminoCuadratico;
+>>>>>>> 14caf5c (commit)
 }

@@ -16,7 +16,11 @@ void print (string s)
     int i=0;
     while(s[i]!='\0')
     {
+<<<<<<< HEAD
         printf("%c",s[i]);
+=======
+        print("%c",s[i]);
+>>>>>>> 14caf5c (commit)
         i++;
     }
 }
@@ -50,18 +54,27 @@ boolean strmen(string s1, string s2)
     }
     if(aux1[i]=='\0' && aux2[i]=='\0')
     {
+<<<<<<< HEAD
         return FALSE;
+=======
+        return false;
+>>>>>>> 14caf5c (commit)
     }
     else
     {
         if(aux2[i]=='\0')
         {
+<<<<<<< HEAD
             return TRUE;
+=======
+            return true;
+>>>>>>> 14caf5c (commit)
         }
         else
         {
             if(aux2[i]=='\0')
             {
+<<<<<<< HEAD
                 return FALSE;
             }
             else
@@ -70,26 +83,48 @@ boolean strmen(string s1, string s2)
                     return TRUE;
                 else
                     return FALSE;
+=======
+                return false;
+            }
+            else
+            {
+                return aux1[i]<aux2[i];
+>>>>>>> 14caf5c (commit)
             }
         }
     }
 }
 /*------------------------------------------*/
+<<<<<<< HEAD
 boolean streq (const string s1,const string s2)
 {
     string aux1;
     string aux2;
     int i=0;
     strcop(aux1, s1);
+=======
+boolean streq (string s1, string s2)
+{
+    int i=0;
+    strcop(aux1, s1):
+>>>>>>> 14caf5c (commit)
     strcop(aux2, s2);
 
     strmay(aux1);
     strmay(aux2);
+<<<<<<< HEAD
     while(aux1[i]!='\0' && aux2[i]!='\0' && aux1[i]==aux2[i])
     {
         i++;
     }
     return (boolean)(aux1[i]=='\0' && aux2[i]=='\0');
+=======
+    while(s[i]!='\0' && aux2[i]!='\0' && s1[i]==s2[i])
+    {
+        i++;
+    }
+    return (s1[i]=='\0' && s2[i]=='\0');
+>>>>>>> 14caf5c (commit)
 }
 /*------------------------------------------*/
 void strmay(string s)
@@ -104,12 +139,16 @@ void strmay(string s)
     }
 }
 /*------------------------------------------*/
+<<<<<<< HEAD
 void strcrear (string &s){
     s = new char [1];
     s[0]='\0';
 }
 /*------------------------------------------*/
 /*void strcop(string &s1, string s2)
+=======
+void strcop(string &s1, string s2)
+>>>>>>> 14caf5c (commit)
 {
     int i=0;
     while(s2[i]!='\0')
@@ -118,6 +157,7 @@ void strcrear (string &s){
         i++;
     }
     s1[i]='\0';
+<<<<<<< HEAD
 } */
 
 void strcop(string &s1, const string s2) {
@@ -134,6 +174,8 @@ void strcop(string &s1, const string s2) {
         i++;
     }
     s1[i] = '\0'; // Asegurarse de que s1 esté terminado con '\0'
+=======
+>>>>>>> 14caf5c (commit)
 }
 /*------------------------------------------*/
 void strswp(string &s1, string &s2)
@@ -146,9 +188,15 @@ void strswp(string &s1, string &s2)
 /*------------------------------------------*/
 void strcon(string &s1, string s2)
 {
+<<<<<<< HEAD
     int i=strlar(s1);
     int j=0;
     while(i+j<MAX-1 && s2[j]!='\0')
+=======
+    int i=strlen(s1);
+    int j=0;
+    while(i+j<MAX-1 && S2[j]!='\0')
+>>>>>>> 14caf5c (commit)
     {
         s1[i]=s2[j];
         i++;
@@ -161,12 +209,21 @@ void strcon(string &s1, string s2)
 // Función para verificar si una cadena es alfabética
 boolean esAlfabetico(string s){
     int i=0;
+<<<<<<< HEAD
     boolean seguir=TRUE;
     while(s[i]!='\0' && seguir)
     {
         if(!((s[i]>=97 && s[i]<=122)||(s[i]>=65 && s[i]<=90)))
         {
             seguir=FALSE;
+=======
+    boolean seguir=true;
+    while(s[i]!='\0' && seguir)
+    {
+        if(!((s[i]>=97 && s[i]<=122)||(s[i]>=65 && s[i]<=90))
+        {
+            seguir=false;
+>>>>>>> 14caf5c (commit)
         }
         i++;
     }

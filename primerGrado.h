@@ -18,6 +18,10 @@ int getIndependiente(PrimerGrado ecuacion);
 void resolverEcuacionPrimer(PrimerGrado ecuacion, float &raiz);
 void guardarPrimerGrado(PrimerGrado ecuacion, FILE* archivo);
 void cargarPrimerGrado(PrimerGrado &ecuacion, FILE* archivo);
+<<<<<<< HEAD
 void sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2,PrimerGrado &nuevo);
+=======
+PrimerGrado sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2);
+>>>>>>> 14caf5c (commit)
 
 #endif // PRIMERGRADO_H_INCLUDED

@@ -1,4 +1,5 @@
 #include "lista.h"
+<<<<<<< HEAD
 
 void crear(lista_string &lStr){
     lStr=NULL;
@@ -55,3 +56,5 @@ int largo(lista_string lStr){
     }
     return i;
 }
+=======
+>>>>>>> 14caf5c (commit)

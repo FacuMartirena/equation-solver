@@ -1,7 +1,14 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1740185883 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\main.cpp
 	<iostream>
 	"primerGrado.h"
+=======
+1740525884 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\main.cpp
+	<iostream>
+	"primerGrado.h"
+	"segundoGrado.h"
+>>>>>>> 14caf5c (commit)
 	"lista.h"
 
 1740429232 c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\primergrado.h
@@ -10,7 +17,11 @@
 1740185545 c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\abb.h
 	"ecuacion.h"
 
+<<<<<<< HEAD
 1740431059 c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\ecuacion.h
+=======
+1740524826 c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\ecuacion.h
+>>>>>>> 14caf5c (commit)
 	"string.h"
 	"tipoEcuacion.h"
 	"primerGrado.h"
@@ -45,15 +56,23 @@
 1740185233 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\abb.cpp
 	"abb.h"
 
+<<<<<<< HEAD
 1740185199 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\ecuacion.cpp
 	"ecuacion.h"
 
 1740185102 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\segundogrado.cpp
+=======
+1740524857 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\ecuacion.cpp
+	"ecuacion.h"
+
+1740525792 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\segundogrado.cpp
+>>>>>>> 14caf5c (commit)
 	"segundoGrado.h"
 
 1740186126 source:c:\users\famartirena\desktop\taller 1 2024 - 2025\resolverecuacion\tipoecuacion.cpp
 	"tipoEcuacion.h"
 
+<<<<<<< HEAD
 1740693248 source:c:\users\famartirena\downloads\resolverecuacion\abb.cpp
 	"abb.h"
 
@@ -116,3 +135,5 @@
 1740692343 source:c:\users\famartirena\downloads\resolverecuacion\string.cpp
 	"string.h"
 
+=======
+>>>>>>> 14caf5c (commit)

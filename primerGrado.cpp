@@ -15,6 +15,7 @@ void crearPrimerGrado (int terminoLineal, int terminoIndependiente, PrimerGrado 
 }
 
 void mostrarPrimerGrado(PrimerGrado ecuacion){
+<<<<<<< HEAD
      if(ecuacion.terminoLineal>0)
         printf("%dx", ecuacion.terminoLineal);
     else
@@ -30,6 +31,18 @@ void mostrarPrimerGrado(PrimerGrado ecuacion){
         else
             printf("%d =0", ecuacion.terminoIndependiente);
     //
+=======
+    if(ecuacion.terminoIndependiente>0)
+        std::cout << ecuacion.terminoLineal << "x + " << ecuacion.terminoIndependiente << " = 0" << std::endl;
+        /*("%dx + %d=0",ecuacion.terminoLineal,ecuacion.terminoIndependiente);*/
+    else
+        if(ecuacion.terminoIndependiente==0)
+            std::cout << ecuacion.terminoLineal << "x = 0" << std::endl;
+          /*  print("%dx =0",ecuacion.terminoLineal);*/
+        else
+            std::cout << ecuacion.terminoLineal << "x " << ecuacion.terminoIndependiente << " = 0" << std::endl;
+          /*  print("%dx %d=0",ecuacion.terminoLineal,ecuacion.terminoIndependiente)*/
+>>>>>>> 14caf5c (commit)
 }
 void setTerminoLineal(PrimerGrado &ecuacion, int terminoLineal){
     ecuacion.terminoLineal=terminoLineal;
@@ -59,12 +72,20 @@ void cargarPrimerGrado(PrimerGrado &ecuacion, FILE* archivo)
     fread(&ecuacion,sizeof(PrimerGrado),1,archivo);
 
 }
+<<<<<<< HEAD
 void sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2,PrimerGrado &nuevo){
 
     nuevo.terminoLineal=ecuacion1.terminoLineal+ecuacion2.terminoLineal;
     //setTerminoLineal(nuevo,getTerminoLineal(ecuacion1)+getTerminoLineal(ecuacion2));
     nuevo.terminoIndependiente=ecuacion1.terminoIndependiente+ecuacion2.terminoIndependiente;
 
+=======
+PrimerGrado sumaPrimera(PrimerGrado ecuacion1, PrimerGrado ecuacion2){
+    PrimerGrado nuevo;
+    nuevo.terminoLineal=ecuacion1.terminoLineal+ecuacion2.terminoLineal;
+    //setTerminoLineal(nuevo,getTerminoLineal(ecuacion1)+getTerminoLineal(ecuacion2));
+    nuevo.terminoIndependiente=ecuacion1.terminoIndependiente+ecuacion2.terminoIndependiente;
+>>>>>>> 14caf5c (commit)
 }
 
 

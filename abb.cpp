@@ -1,4 +1,5 @@
 #include "abb.h"
+<<<<<<< HEAD
 
 void crear(arbol &root){
     root=NULL;
@@ -43,3 +44,5 @@ arbol getHijoDer(arbol root){
 Ecuacion getInfo(arbol root){
     return root->info;
 }
+=======
+>>>>>>> 14caf5c (commit)
